@@ -1,12 +1,12 @@
 <?php
 
-namespace Muz\Rector\Tests\ClassFinder;
+namespace Muz\Rector\Tests\ClassFinderOnboardRule;
 
 use PHPUnit\Framework\Attributes\DataProvider;
 use Rector\Testing\PHPUnit\AbstractRectorTestCase;
 
-/** @covers \Muz\Rector\Rule\NodeFinderForTesting */
-class ClassFinderTest extends AbstractRectorTestCase
+/** @covers \Rector\Renaming\Rector\MethodCall\RenameMethodRector */
+class ClassFinderOnboardRuleTest extends AbstractRectorTestCase
 {
     #[DataProvider('provideData')]
     public function test(string $filePath): void
